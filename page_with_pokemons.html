@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/page_with_pokemons.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="header__line">
+                <div class="header__line__logo">
+                    <img src="img/Pokemon_logo.png" alt="" class="image__logo">
+                    <h2 class="header__line__title">Your Best Friend</h2>
+                </div>
+
+                <div class="header__line__basic">
+                    <div class="home">
+                        <img src="img/home-3.png" alt="" class="home__image">
+                        <p class="home__title">Главная</p>
+                    </div>
+                    <div class="basket">
+                        <img src="img/basket.png" alt="" class="image__basket">
+                        <p class="basket__title">Корзина</p>
+                    </div>
+                    <div class="registration">
+                        <img src="img/person.png" alt="" class="registration__img">
+                        <p class="registration__title">Войти</p>
+                    </div>
+                    <div class="authorization__done">
+                        <img src="img/hand.png" alt="" class="welcome__img">
+                        <p class="welcome"></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="pokemons">
+                <h2 class="pokemons__title">Наши Покемоны</h2>
+                <div class="pokemons__search">
+                    <div class="pokemons__line__search">
+                        <input type="text" class="pokemons__search__input" placeholder="Поиск">
+                        <button class="btn__search">Искать</button>
+                    </div>
+                    <div class="sort">
+                        <div class="sort__wrap">
+                            <select name="" class="sort__input">
+                                <option class="none">По умолчанию</option>
+                                <option class="up">По возрастанию цены</option>
+                                <option class="down">По убыванию цены</option>
+                            </select>
+                            <button class="btn__sort">Сортировать</button>
+                        </div>
+    
+                    </div>
+                </div>
+                
+                <div class="all__pokemons">
+<!-- 
+                    <div class="all__pokemons__content">
+
+                    </div> -->
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="footer__license">
+                    <img src="img/for-footer-logo.png" alt="" class="footer__license__logo">
+                    <p class="footer__license__subtitle">© Все права защищены</p>
+                </div>
+                <div class="footer__contact_information">
+                    <div class="information">
+                        <p class="information__text">По всем вопросам обращайтесь по номеру:</p>
+                        <p class="information__phone">+7 (777) 878-87-78</p>
+                    </div>
+
+                    <div class="information__image">
+                        <img src="img/for-footer.png" alt="" class="image">
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/logic/authorization_logic.js"></script>
+    <script src="js/logic/basket_logic.js"></script>
+    <script src="js/ui/shop_ui.js"></script>
+</body>
+
+</html>
