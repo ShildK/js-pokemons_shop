@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=El+Messiri:wght@500&family=Merriweather&family=Montserrat:wght@400;500;700;900&family=Oswald&family=Poppins&family=Roboto&family=Source+Sans+Pro:wght@400;600&display=swap');
+@import 'reset.scss';
+
+$color__one: #fff;
+$color__two: #efc55a;
+$color__three: #e7d6ab;
+$color__four: rgb(28, 109, 214);
+$color__five: rgb(55, 108, 174);
+$color__six: #241400;
+$color__seven: #926903;
+
+body {
+    background-image: url(../img/background-auth.png);
+}
+
+.main {
+    width: 1400px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+
+    .authorization {
+        width: 800px;
+        min-height: 600px;
+        margin: 150px auto;
+        background-color: #fbebd8;
+        border-radius: 5px;
+        box-shadow: 5px 10px 20px 5px #f0d2ad;
+
+        .authorization__title {
+            font-weight: 900;
+            font-size: 28px;
+            line-height: 196.19%;
+            text-align: center;
+            padding-top: 50px;
+            margin: 0 0 40px;
+            color: $color__six;
+            margin-bottom: 40px;
+        }
+
+        .authorization__form {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+
+            .login {
+                width: 400px;
+                height: 36px;
+                margin: 0 0 20px;
+                padding: 15px;
+                font-size: 20px;
+                background-color: rgba($color: #fff, $alpha: 0.3);
+                border-width: 0 0 2px 0;
+                border-style: solid;
+                border-color: $color__four;
+                outline: none;
+            }
+
+            .login::placeholder {
+                font-size: 20px;
+            }
+
+            .password {
+                width: 400px;
+                height: 36px;
+                margin: 0 0 30px;
+                padding: 15px;
+                font-size: 20px;
+                background-color: rgba($color: #fff, $alpha: 0.3);
+                border-width: 0 0 2px 0;
+                border-style: solid;
+                border-color: $color__four;
+                outline: none;
+            }
+
+            .password::placeholder {
+                font-size: 20px;
+            }
+
+        }
+
+        .check__data {
+            width: 400px;
+            margin: -25px auto 0;
+        
+
+            .check__data__message {
+                height: 10px;
+                text-align: right;
+                color: red;
+                font-weight: 500;
+            }
+
+            .registration__successfully {
+                height: 10px;
+                text-align: right;
+                color: green;
+                font-weight: 500;
+            }
+        }
+
+        .authorization__question {
+            width: 400px;
+            margin: 0 auto;
+
+            .authorization__btn {
+                width: 400px;
+                height: 34px;
+                background-color: $color__two;
+                border-radius: 5px;
+                margin: 20px 0 40px;
+                color: $color__four;
+                font-weight: 500;
+                font-size: 20px
+            }
+
+            .authorization__btn__hide {
+                display: none;
+            }
+            
+            .subtitle {
+                text-align: center;
+                color: $color__six;
+                margin-top: 60px;
+                .link {
+                    color: $color__four;
+                }
+            }
+
+            .subtitle__hide {
+                display: none;
+            }
+        }
+    }
+}

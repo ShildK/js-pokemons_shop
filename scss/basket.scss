@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=El+Messiri:wght@500&family=Merriweather&family=Montserrat:wght@400;500;700;900&family=Oswald&family=Poppins&family=Roboto&family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&family=Montserrat:wght@600;800&family=Open+Sans&family=Pacifico&family=Roboto:ital@0;1&family=Work+Sans:wght@300;400&display=swap');
+@import 'reset.scss';
+
+$color__one: #fff;
+$color__two: #efc55a;
+$color__three: #e7d6ab;
+$color__four: rgb(28, 109, 214);
+$color__five: rgb(55, 108, 174);
+$color__six: #241400;
+$color__seven: #926903;
+
+body {
+    background-image: url(../img/background-auth.png);
+}
+
+.wrap {
+    width: 1400px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+
+    .basket {
+        width: 1240px;
+        min-height: 800px;
+        margin: 50px auto;
+        background-color: #fbebd8;
+        border-radius: 5px;
+        box-shadow: 5px 10px 20px 5px #f0d2ad;
+
+        .basket__header {
+            width: 1240px;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #efcfa7;
+            border-bottom: 2px solid #ddcfbe;
+            box-shadow: 0 0 10px 1px #b7a58f;
+            border-radius: 5px 5px 0 0;
+
+            .header__logo {
+                width: 400px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: 25px;
+
+                .logo__image {
+                    width: 160px;
+                }
+
+                .logo__title {
+                    font-family: 'Pacifico', cursive;
+                    font-size: 26px;
+                    color: $color__seven;
+                }
+            }
+
+            .header__novigation {
+                width: 190px;
+                display: flex;
+                justify-content: space-between;
+                // align-items: center;
+                color: $color__seven;
+                font-size: 14px;
+                font-weight: 500;
+                margin: 0 25px 0 0;
+
+                .novigation__home {
+                    cursor: pointer;
+
+                    .home__image {
+                        width: 33px;
+                        margin: 2px 0 1px 15px;
+                    }
+
+                    .home__title {
+                        width: 45px;
+                        text-align: center;
+                    }
+
+                }
+
+                .shop {
+                    cursor: pointer;
+                    margin-top: 2px;
+                    margin-left: -10px;
+
+                    .shop__image {
+                        width: 32px;
+                        margin: 0 0 3px 16px;
+                    }
+
+                    .shop__title {
+                        width: 45px;
+                        text-align: center;
+                    }
+                }
+
+                .novigation__registration {
+                    cursor: pointer;
+                    margin: 2px 0 0 -5px;
+
+                    .registration__img {
+                        width: 35px;
+                        margin-left: 6px;
+                    }
+                }
+
+                .authorization__done {
+                    display: none;
+                    cursor: pointer;
+                    margin-top: 2px;
+                    margin-left: -8px;
+
+                    .welcome__img {
+                        width: 35px;
+                        margin-left: 9px;
+                    }
+
+                    .welcome {
+                        width: 45px;
+                        text-align: center;
+                    }
+                }
+            }
+
+
+
+        }
+
+
+        .basket__main {
+            .basket__main__information {
+                width: 1000px;
+                height: 200px;
+                background-color: #f9f5ee;
+                border-radius: 5px;
+                box-shadow: 0 0 10px 1px #b7a58f;
+                margin: 40px auto;
+
+                .information {
+                    text-align: center;
+                    font-size: 20px;
+                    color: $color__seven;
+                    padding-top: 20px;
+                }
+            }
+
+            .all__purchases {
+                margin-top: 40px;
+                padding-bottom: 60px;
+
+                .pokemon__card {
+                    width: 1000px;
+                    height: 270px;
+                    border: 1px solid $color__three;
+                    border-radius: 5px;
+                    background-color: $color__one;
+                    display: flex;
+                    margin: 20px 0 20px 100px;
+                    box-shadow: 5px 5px 20px 0px rgb(211, 193, 163);
+                    font-weight: 500;
+                    letter-spacing: 0.8px;
+                    font-size: 18px;
+
+                    .pokemon__image {
+                        width: 200px;
+                        margin: 20px 90px 20px 60px;
+                    }
+
+                    .pokemon__description {
+                        margin-top: 30px;
+                        color: $color__six;
+
+                        .pokemon__name {
+                            font-size: 26px;
+                            margin-bottom: 20px;
+                            letter-spacing: 2px;
+                        }
+
+                        .pokemon__weight {
+                            margin-bottom: 7px;
+                        }
+
+                        .pokemon__type {
+                            margin-bottom: 7px;
+                        }
+
+                        .pokemon__price {
+                            margin-bottom: 7px;
+                        }
+
+                        .pokemon__line {
+                            width: 520px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-top: 30px;
+
+                            .pokemon__count {
+                                display: flex;
+                                align-items: center;
+
+                                .count__minus {
+                                    width: 35px;
+                                    height: 35px;
+                                    background-color: $color__two;
+                                    border-radius: 5px;
+                                    font-size: 30px;
+                                    margin: 0 15px 0 0;
+                                    color: $color__six;
+                                    cursor: pointer;
+                                }
+                                .count__minus:hover {
+                                    background-color: $color__three;
+                                    transform: scale(1.04);
+                                }
+
+                                .count__plus {
+                                    width: 35px;
+                                    height: 35px;
+                                    background-color: $color__two;
+                                    border-radius: 5px;
+                                    font-size: 26px;
+                                    margin-left: 15px;
+                                    color: $color__six;
+                                    cursor: pointer;
+                                }
+                                .count__plus:hover {
+                                    background-color: $color__three;
+                                    transform: scale(1.04);
+                                }
+                            }
+
+                            .pokemon__delete {
+                                width: 105px;
+                                height: 35px;
+                                background-color: $color__two;
+                                border-radius: 5px;
+                                font-size: 18px;
+                                font-weight: 500;
+                                color: $color__six;
+                                cursor: pointer;
+                            }
+                            .pokemon__delete:hover {
+                                background-color: $color__three;
+                                transform: scale(1.04);
+                            }
+                        }
+                    }
+
+
+                }
+
+
+            }
+
+            .arrange__purchase {
+                padding-bottom: 60px;
+                display: none;
+
+                .sum {
+                    text-align: end;
+                    margin: 0 110px 0 0;
+                    letter-spacing: 0.7px;
+                    font-size: 26px;
+                    font-weight: 600;
+                    color: $color__six;
+                }
+
+                .pokemons__buy {
+                    display: none;
+                    width: 115px;
+                    height: 45px;
+                    background-color: $color__two;
+                    border-radius: 5px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: $color__six;
+                    cursor: pointer;
+                    margin: 20px 0 0 1025px;
+                }
+                .pokemons__buy:hover {
+                    background-color: $color__three;
+                    width: 117px;
+                    height: 47px;
+                }
+            }
+
+            .modal__window__two {
+                width: 500px;
+                height: 230px;
+                font-size: 20px;
+                position: absolute;
+                background-color: $color__one;
+                border-radius: 5px;
+                box-shadow: 5px 5px 20px 0px rgb(211, 193, 163);
+                top: 350px;
+                left: 700px;
+
+                .modal__window__message {
+                    text-align: center;
+                    margin: 50px 20px 30px;
+                }
+
+                .btn__cansel {
+                    width: 105px;
+                    height: 35px;
+                    background-color: $color__two;
+                    border-radius: 5px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $color__six;
+                    margin: 20px 200px 0;
+                    cursor: pointer;
+                }
+
+                .btn__cansel:hover {
+                    background-color: $color__three;
+                    width: 107px;
+                    height: 37px;
+                }
+            }
+
+            .modal__window {
+                position: absolute;
+                width: 300px;
+                height: 120px;
+                background-color: $color__one;
+                border-radius: 5px;
+                box-shadow: 5px 5px 20px 0px rgb(211, 193, 163);
+                top: 70px;
+                left: 1250px;
+
+                .question__about__logout {
+                    padding: 20px;
+                    text-align: center;
+                }
+
+                .button__wrap {
+                    width: 120px;
+                    margin: 0 auto;
+
+                    .btn__logout {
+                        cursor: pointer;
+                        width: 50px;
+                        height: 30px;
+                        background-color: $color__two;
+                        border-radius: 5px;
+                        margin-right: 5px;
+                    }
+
+                    .btn__logout:hover {
+                        background-color: $color__three;
+                    }
+
+                    .btn__cansel {
+                        cursor: pointer;
+                        width: 50px;
+                        height: 30px;
+                        background-color: $color__two;
+                        border-radius: 5px;
+                        margin-left: 5px;
+                    }
+
+                    .btn__cansel:hover {
+                        background-color: $color__three;
+                    }
+                }
+
+            }
+
+            .modal__window__none {
+                display: none;
+            }
+
+        }
+
+    }
+
+}

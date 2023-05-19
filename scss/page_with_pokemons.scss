@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=El+Messiri:wght@500&family=Merriweather&family=Montserrat:wght@400;500;700;900&family=Oswald&family=Poppins&family=Roboto&family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&family=Montserrat:wght@600;800&family=Open+Sans&family=Pacifico&family=Roboto:ital@0;1&family=Work+Sans:wght@300;400&display=swap');
+@import 'reset.scss';
+
+$color__one: #fff;
+$color__two: #efc55a;
+$color__three: #e7d6ab;
+$color__four: rgb(28, 109, 214);
+$color__five: rgb(55, 108, 174);
+$color__six: #241400;
+$color__seven: #926903;
+
+.wrap {
+    width: 1600px;
+    margin: 0 auto;
+    background-color: #fcefde;
+    font-family: 'Montserrat', sans-serif;
+
+    header {
+        margin-bottom: 120px;
+        padding-top: 10px;
+        width: 1600px;
+        height: 100px;
+        background-color: $color__five;
+        border-bottom: 2px solid #ddcfbe;
+        box-shadow: 0 0 10px 1px #b7a58f;
+
+        .header__line {
+            width: 1470px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .header__line__logo {
+                width: 460px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .image__logo {
+                    width: 200px;
+                }
+
+                .header__line__title {
+                    font-family: 'Pacifico', cursive;
+                    font-size: 26px;
+                    color: $color__one;
+                }
+
+            }
+
+            .header__line__basic {
+                width: 180px;
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0 0 0;
+                color: $color__one;
+                font-size: 12px;
+                font-weight: 500;
+
+                .home {
+                    cursor: pointer;
+
+                    .home__image {
+                        width: 30px;
+                        margin: 2px 0 2px 10px;
+                    }
+
+                    .home__title {
+                        width: 45px;
+                        text-align: center;
+                    }
+
+                }
+
+                .basket {
+                    cursor: pointer;
+
+                    .image__basket {
+                        width: 35px;
+                        margin-left: 3px;
+                    }
+                }
+
+                .registration {
+                    cursor: pointer;
+                    margin-left: -8px;
+
+                    .registration__img {
+                        width: 35px;
+                        margin-left: 3px;
+                    }
+                }
+
+                .authorization__done {
+                    display: none;
+                    cursor: pointer;
+                    margin-left: -8px;
+
+                    .welcome__img {
+                        width: 35px;
+                        margin-left: 6px;
+                    }
+
+                    .welcome {
+                        width: 45px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .modal__window {
+            position: absolute;
+            width: 300px;
+            height: 120px;
+            background-color: $color__one;
+            border-radius: 5px;
+            box-shadow: 2px 2px 20px 0px rgba(160, 158, 155, 0.7);
+            top: 30px;
+            left: 1420px;
+
+            .question__about__logout {
+                padding: 20px;
+                text-align: center;
+            }
+
+            .button__wrap {
+                width: 120px;
+                margin: 0 auto;
+
+                .btn__logout {
+                    cursor: pointer;
+                    width: 50px;
+                    height: 30px;
+                    background-color: $color__two;
+                    border-radius: 5px;
+                    margin-right: 5px;
+                }
+                .btn__logout:hover {
+                    background-color: $color__three;
+                }
+                .btn__cansel {
+                    cursor: pointer;
+                    width: 50px;
+                    height: 30px;
+                    background-color: $color__two;
+                    border-radius: 5px;
+                    margin-left: 5px;
+                }
+                .btn__cansel:hover {
+                    background-color: $color__three;
+                }
+            }
+
+        }
+
+        .modal__window__none {
+            display: none;
+        }
+
+    }
+
+    main {
+        .pokemons {
+            width: 1432px;
+
+            .pokemons__title {
+                font-size: 34px;
+                margin: 0 0 40px 145px;
+                color: $color__six;
+            }
+
+            .pokemons__search {
+                width: 1400px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 auto 50px;
+
+                .pokemons__line__search {
+                    display: flex;
+                    align-items: center;
+                    margin: 10px 0 0 140px;
+
+                    .pokemons__search__input {
+                        width: 230px;
+                        height: 30px;
+                        outline: none;
+                        border-width: 0 0 2px 0;
+                        border-style: solid;
+                        border-color: $color__four;
+                        background-color: rgba($color: #fff, $alpha: 0.6);
+                        font-size: 20px;
+                        margin-right: 10px;
+                        padding: 10px;
+                        color: $color__five;
+                    }
+
+                    .pokemons__search__input::placeholder {
+                        color: $color__five;
+                    }
+
+                    .btn__search{
+                        font-size: 18px;
+                        width: 100px;
+                        height: 30px;
+                        background-color: $color__four;
+                        border-radius: 5px;
+                        box-shadow: 5px 5px 20px 0px rgb(211, 193, 163);
+                        color: $color__one;
+                        margin-left: 10px;
+                    }
+
+                    .btn__search:hover {
+                        background-color: $color__five;
+                        transform: scale(1.05);
+                    }
+                }
+
+                .sort {
+                    .sort__wrap {
+                        .sort__input {
+
+                            width: 230px;
+                            height: 30px;
+                            background-color: rgba($color: #fff, $alpha: 0.6);
+                            outline: none;
+                            border-width: 0 0 2px 0;
+                            border-style: solid;
+                            border-color: $color__four;
+                            color: $color__five;
+                            font-size: 18px;
+                        }
+
+                        .btn__sort {
+                            font-size: 18px;
+                            width: 130px;
+                            height: 30px;
+                            background-color: $color__four;
+                            border-radius: 5px;
+                            box-shadow: 5px 5px 20px 0px rgb(211, 193, 163);
+                            color: $color__one;
+                            margin-left: 10px;
+                        }
+
+                        .btn__sort:hover {
+                            background-color: $color__five;
+                            transform: scale(1.05);
+                        }
+                    }
+
+                }
+            }
+
+
+            .all__pokemons {
+                overflow-x: hidden;
+                width: 1470px;
+                margin: 0 10%;
+
+                .all__pokemons__content {
+                    display: grid;
+                    grid-template-columns: repeat(4, 300px);
+                    grid-template-rows: repeat(15, 400px);
+                    grid-gap: 30px;
+                    margin-bottom: 30px;
+
+                    .pokemon__card {
+                        border: 1px solid $color__three;
+                        border-radius: 5px;
+                        padding: 40px 40px 0 40px;
+                        background-color: $color__one;
+                        box-shadow: 5px 5px 20px 0px rgb(211, 193, 163);
+
+                        .pokemon__image {
+                            width: 210px;
+                            height: 200px;
+                            margin-bottom: 30px;
+                        }
+
+                        .pokemon__name {
+                            margin-bottom: 20px;
+                        }
+
+                        .pokemon__line {
+                            width: 230px;
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: 30px;
+
+                            .pokemon__line__description {
+                                .pokemon__price {
+                                    margin-bottom: 5px;
+                                }
+
+                                .pokemon__stat {}
+                            }
+
+                            .pokemon__buy {
+                                .image__basket {
+                                    width: 35px;
+                                    cursor: pointer;
+                                }
+
+                                .image__basket:hover {
+                                    width: 40px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 1600px;
+        height: 200px;
+        background-color: $color__five;
+
+        .footer {
+            width: 1270px;
+            margin: 100px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $color__one;
+
+            .footer__license {
+                .footer__license__logo {
+                    width: 150px;
+                    margin: 0 0 -30px 17px;
+                }
+            }
+
+            .footer__contact_information {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 30px;
+
+                .information {
+                    width: 250px;
+
+                    .information__text {
+                        margin-bottom: 20px
+                    }
+
+                    .information__phone {
+                        font-weight: 500;
+                    }
+
+                }
+
+                .information__image {
+                    .image {
+                        width: 150px;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
