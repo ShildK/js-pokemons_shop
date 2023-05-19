@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=El+Messiri:wght@500&family=Merriweather&family=Montserrat:wght@400;500;700;900&family=Oswald&family=Poppins&family=Roboto&family=Source+Sans+Pro:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number],
+input[type=number]:hover,
+input[type=number]:focus {
+  -webkit-appearance: none;
+          appearance: none;
+  -moz-appearance: textfield;
+}
+
+body {
+  background-image: url(../img/background-auth.png);
+}
+
+.main {
+  width: 1400px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+.main .authorization {
+  width: 800px;
+  min-height: 600px;
+  margin: 150px auto;
+  background-color: #fbebd8;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 10px 20px 5px #f0d2ad;
+          box-shadow: 5px 10px 20px 5px #f0d2ad;
+}
+.main .authorization .authorization__title {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 196.19%;
+  text-align: center;
+  padding-top: 50px;
+  margin: 0 0 40px;
+  color: #241400;
+  margin-bottom: 40px;
+}
+.main .authorization .authorization__form {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+.main .authorization .authorization__form .login {
+  width: 400px;
+  height: 36px;
+  margin: 0 0 20px;
+  padding: 15px;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: rgb(28, 109, 214);
+  outline: none;
+}
+.main .authorization .authorization__form .login::-webkit-input-placeholder {
+  font-size: 20px;
+}
+.main .authorization .authorization__form .login::-moz-placeholder {
+  font-size: 20px;
+}
+.main .authorization .authorization__form .login:-ms-input-placeholder {
+  font-size: 20px;
+}
+.main .authorization .authorization__form .login::-ms-input-placeholder {
+  font-size: 20px;
+}
+.main .authorization .authorization__form .login::placeholder {
+  font-size: 20px;
+}
+.main .authorization .authorization__form .password {
+  width: 400px;
+  height: 36px;
+  margin: 0 0 30px;
+  padding: 15px;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: rgb(28, 109, 214);
+  outline: none;
+}
+.main .authorization .authorization__form .password::-webkit-input-placeholder {
+  font-size: 20px;
+}
+.main .authorization .authorization__form .password::-moz-placeholder {
+  font-size: 20px;
+}
+.main .authorization .authorization__form .password:-ms-input-placeholder {
+  font-size: 20px;
+}
+.main .authorization .authorization__form .password::-ms-input-placeholder {
+  font-size: 20px;
+}
+.main .authorization .authorization__form .password::placeholder {
+  font-size: 20px;
+}
+.main .authorization .check__data {
+  width: 400px;
+  margin: -25px auto 0;
+}
+.main .authorization .check__data .check__data__message {
+  height: 10px;
+  text-align: right;
+  color: red;
+  font-weight: 500;
+}
+.main .authorization .check__data .registration__successfully {
+  height: 10px;
+  text-align: right;
+  color: green;
+  font-weight: 500;
+}
+.main .authorization .authorization__question {
+  width: 400px;
+  margin: 0 auto;
+}
+.main .authorization .authorization__question .authorization__btn {
+  width: 400px;
+  height: 34px;
+  background-color: #efc55a;
+  border-radius: 5px;
+  margin: 20px 0 40px;
+  color: rgb(28, 109, 214);
+  font-weight: 500;
+  font-size: 20px;
+}
+.main .authorization .authorization__question .authorization__btn__hide {
+  display: none;
+}
+.main .authorization .authorization__question .subtitle {
+  text-align: center;
+  color: #241400;
+  margin-top: 60px;
+}
+.main .authorization .authorization__question .subtitle .link {
+  color: rgb(28, 109, 214);
+}
+.main .authorization .authorization__question .subtitle__hide {
+  display: none;
+}

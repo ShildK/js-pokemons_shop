@@ -1,0 +1,592 @@
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=El+Messiri:wght@500&family=Merriweather&family=Montserrat:wght@400;500;700;900&family=Oswald&family=Poppins&family=Roboto&family=Source+Sans+Pro:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&family=Montserrat:wght@600;800&family=Open+Sans&family=Pacifico&family=Roboto:ital@0;1&family=Work+Sans:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number],
+input[type=number]:hover,
+input[type=number]:focus {
+  -webkit-appearance: none;
+          appearance: none;
+  -moz-appearance: textfield;
+}
+
+body {
+  width: 1600px;
+  height: 3000px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  width: 1600px;
+  background-color: #fcefde;
+  padding-top: 10px;
+}
+.main header {
+  margin-bottom: 170px;
+}
+.main header .header__line {
+  width: 1470px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main header .header__line .header__line__logo {
+  width: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main header .header__line .header__line__logo .image__logo {
+  width: 220px;
+}
+.main header .header__line .header__line__logo .header__line__title {
+  font-family: "Pacifico", cursive;
+  font-size: 26px;
+  color: #241400;
+}
+.main header .header__line .header__line__basic {
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0 0 0;
+  color: #926903;
+  font-size: 12px;
+  font-weight: 500;
+}
+.main header .header__line .header__line__basic .shop {
+  cursor: pointer;
+}
+.main header .header__line .header__line__basic .shop .shop__image {
+  width: 32px;
+  margin: 0 0 3px 12px;
+}
+.main header .header__line .header__line__basic .shop .shop__title {
+  width: 45px;
+  text-align: center;
+}
+.main header .header__line .header__line__basic .basket {
+  cursor: pointer;
+}
+.main header .header__line .header__line__basic .basket .image__basket {
+  width: 35px;
+  margin-left: 3px;
+}
+.main header .header__line .header__line__basic .registration {
+  cursor: pointer;
+  margin: 0 6px 0 -8px;
+}
+.main header .header__line .header__line__basic .registration .registration__img {
+  width: 35px;
+  margin-left: 3px;
+}
+.main header .header__line .header__line__basic .authorization__done {
+  display: none;
+  cursor: pointer;
+  margin-left: -8px;
+}
+.main header .header__line .header__line__basic .authorization__done .welcome__img {
+  width: 35px;
+  margin-left: 3px;
+}
+.main header .header__line .header__line__basic .authorization__done .welcome {
+  width: 45px;
+  text-align: center;
+}
+.main header .header__main {
+  width: 1340px;
+  height: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 88px auto 0;
+}
+.main header .header__main .header__main__description {
+  margin: 0 0 0 40px;
+  height: 600px;
+}
+.main header .header__main .header__main__description .image__title {
+  width: 470px;
+  margin-top: 30px;
+}
+.main header .header__main .header__main__description .subtitle {
+  margin: -70px 0 0 20px;
+  width: 480px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #926903;
+  font-weight: 400;
+}
+.main header .header__main .header__main__image {
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  margin-right: 100px;
+}
+.main header .header__main .header__main__image .carusel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 450px;
+}
+.main header .header__main .header__main__image .carusel input {
+  display: none;
+}
+.main header .header__main .header__main__image .carusel .img__slide {
+  -webkit-transition: 1.4s;
+  transition: 1.4s;
+}
+.main header .header__main .header__main__image .carusel .img__slide .img__carusel {
+  width: 450px;
+  height: 450px;
+}
+.main header .header__main .header__main__image .carusel .navigation {
+  position: absolute;
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 480px;
+  margin-left: -170px;
+  display: none;
+}
+.main header .header__main .header__main__image .carusel .navigation_btn {
+  border: 3px solid rgb(55, 108, 174);
+  border-radius: 10px;
+  padding: 7px;
+  margin: 5px;
+  cursor: pointer;
+}
+.main header .header__main .header__main__image .carusel .navigation_btn:hover {
+  background: rgb(55, 108, 174);
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.main header .header__main .header__main__image .carusel #radio1:checked ~ .first {
+  margin-left: 0;
+}
+.main header .header__main .header__main__image .carusel #radio2:checked ~ .first {
+  margin-left: -100%;
+}
+.main header .header__main .header__main__image .carusel #radio3:checked ~ .first {
+  margin-left: -200%;
+}
+.main header .header__main .header__main__image .carusel #radio4:checked ~ .first {
+  margin-left: -300%;
+}
+.main header .header__main .header__main__image .carusel #radio5:checked ~ .first {
+  margin-left: -400%;
+}
+.main header .modal__window {
+  position: absolute;
+  width: 300px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 20px 0px rgb(211, 193, 163);
+          box-shadow: 5px 5px 20px 0px rgb(211, 193, 163);
+  top: 50px;
+  left: 1400px;
+}
+.main header .modal__window .question__about__logout {
+  padding: 20px;
+  text-align: center;
+}
+.main header .modal__window .button__wrap {
+  width: 120px;
+  margin: 0 auto;
+}
+.main header .modal__window .button__wrap .btn__logout {
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+  background-color: #efc55a;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.main header .modal__window .button__wrap .btn__logout:hover {
+  background-color: #e7d6ab;
+}
+.main header .modal__window .button__wrap .btn__cansel {
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+  background-color: #efc55a;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.main header .modal__window .button__wrap .btn__cansel:hover {
+  background-color: #e7d6ab;
+}
+.main header .modal__window__none {
+  display: none;
+}
+.main main .pokemons {
+  width: 1432px;
+}
+.main main .pokemons .pokemons__title {
+  color: #241400;
+  font-size: 34px;
+  margin: 0 0 20px 100px;
+  font-weight: 900;
+  line-height: 196.19%;
+}
+.main main .pokemons .pokemons__text {
+  line-height: 26px;
+  font-size: 20px;
+  margin: 0 0 70px 100px;
+  font-weight: 400;
+}
+.main main .pokemons .all__pokemons {
+  overflow-x: hidden;
+  width: 1470px;
+  margin: 0 10%;
+}
+.main main .pokemons .all__pokemons .all__pokemons__show {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 30px 300px 30px 300px 30px 300px;
+  grid-template-columns: repeat(4, 300px);
+  -ms-grid-rows: 400px 30px 400px;
+  grid-template-rows: repeat(2, 400px);
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+.main main .pokemons .all__pokemons .all__pokemons__show > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.main main .pokemons .all__pokemons .all__pokemons__show > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.main main .pokemons .all__pokemons .all__pokemons__show > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.main main .pokemons .all__pokemons .all__pokemons__show > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+.main main .pokemons .all__pokemons .all__pokemons__show > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.main main .pokemons .all__pokemons .all__pokemons__show > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.main main .pokemons .all__pokemons .all__pokemons__show > *:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+.main main .pokemons .all__pokemons .all__pokemons__show > *:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+}
+.main main .pokemons .all__pokemons .all__pokemons__show .pokemon__card {
+  border: 1px solid #e7d6ab;
+  border-radius: 5px;
+  padding: 40px 40px 0 40px;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 20px 0px rgb(211, 193, 163);
+          box-shadow: 5px 5px 20px 0px rgb(211, 193, 163);
+}
+.main main .pokemons .all__pokemons .all__pokemons__show .pokemon__card .pokemon__image {
+  width: 210px;
+  height: 200px;
+  margin-bottom: 30px;
+}
+.main main .pokemons .all__pokemons .all__pokemons__show .pokemon__card .pokemon__name {
+  margin-bottom: 20px;
+}
+.main main .pokemons .all__pokemons .all__pokemons__show .pokemon__card .pokemon__line {
+  width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+.main main .pokemons .all__pokemons .all__pokemons__show .pokemon__card .pokemon__line .pokemon__line__description .pokemon__price {
+  margin-bottom: 5px;
+}
+.main main .pokemons .all__pokemons .all__pokemons__show .pokemon__card .pokemon__line .pokemon__buy .image__basket {
+  width: 35px;
+}
+.main main .pokemons .all__pokemons .all__pokemons__show .pokemon__card .pokemon__line .pokemon__buy .image__basket:hover {
+  width: 40px;
+  cursor: pointer;
+}
+.main main .pokemons .all__pokemons .pokemon__show__btn {
+  width: 230px;
+  height: 40px;
+  background-color: #efc55a;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  margin: 20px 0 0 530px;
+}
+.main main .pokemons .all__pokemons .pokemon__show__btn:hover {
+  background-color: #e7d6ab;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.main main .about_shop {
+  color: #241400;
+  margin: 250px 0 200px;
+}
+.main main .about_shop .about_shop__title {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 196.19%;
+  text-align: center;
+}
+.main main .about_shop .about_shop__description {
+  width: 1370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+.main main .about_shop .about_shop__description .about_shop__count {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 196.19%;
+}
+.main main .about_shop .about_shop__description .about_shop__subtitle {
+  margin-left: -20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 196.19%;
+}
+.main main .delivery {
+  color: #241400;
+}
+.main main .delivery .delivery__title {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 196.19%;
+  text-align: center;
+}
+.main main .delivery .delivery__line {
+  width: 50px;
+  border: 1px solid #926903;
+  margin: 0 auto 50px;
+}
+.main main .delivery .delivery__sbtitle {
+  width: 1170px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 196.19%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 0 auto 200px;
+}
+.main main .questions {
+  width: 1100px;
+  margin: 0 auto 150px;
+}
+.main main .questions .questions__title {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 196.19%;
+  margin-bottom: 50px;
+}
+.main main .questions .questions__block {
+  position: relative;
+  width: 1010px;
+  border: 2px solid rgb(55, 108, 174);
+  border-radius: 5px;
+  margin: 30px;
+}
+.main main .questions .questions__block .questions__block__title {
+  width: 1006px;
+  height: 70px;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: rgb(55, 108, 174);
+  background-color: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+}
+.main main .questions .questions__block .questions__block__title .title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 196.19%;
+  margin-left: 15px;
+  padding: 10px 40px 10px;
+}
+.main main .questions .questions__block .questions__block__title::before,
+.main main .questions .questions__block .questions__block__title::after {
+  content: " ";
+  width: 16px;
+  height: 3px;
+  background-color: rgb(55, 108, 174);
+  position: absolute;
+  top: 35px;
+  margin: 0 15px 0;
+}
+.main main .questions .questions__block .questions__block__title::before {
+  left: 0px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.main main .questions .questions__block .questions__block__title::after {
+  left: 12px;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.main main .questions .questions__block .answer {
+  width: 1006px;
+  height: 130px;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+}
+.main main .questions .questions__block .answer .text {
+  font-size: 18px;
+  line-height: 196.19%;
+  padding: 10px;
+}
+.main main .questions .questions__block .questions__block__title.active::before {
+  background-color: #926903;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.main main .questions .questions__block .questions__block__title.active::after {
+  background-color: #926903;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.main main .social_network {
+  color: #241400;
+}
+.main main .social_network .social_network__title {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 196.19%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.main main .social_network .social_network__images {
+  width: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+.main footer {
+  width: 1600px;
+  height: 200px;
+  background-color: rgb(55, 108, 174);
+}
+.main footer .footer {
+  width: 1270px;
+  margin: 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+.main footer .footer .footer__license .footer__license__logo {
+  width: 150px;
+  margin: 0 0 -30px 17px;
+}
+.main footer .footer .footer__contact_information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+.main footer .footer .footer__contact_information .information {
+  width: 250px;
+}
+.main footer .footer .footer__contact_information .information .information__text {
+  margin-bottom: 20px;
+}
+.main footer .footer .footer__contact_information .information .information__phone {
+  font-weight: 500;
+}
+.main footer .footer .footer__contact_information .information__image .image {
+  width: 150px;
+}
