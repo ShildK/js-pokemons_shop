@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="header__line">
+                <div class="header__line__logo">
+                    <img src="img/Pokemon_logo.png" alt="" class="image__logo">
+                    <h2 class="header__line__title"> Your Best Friend</h2>
+                </div>
+
+                <div class="header__line__basic">
+                    <div class="shop">
+                        <img src="img/shop.png" alt="" class="shop__image">
+                        <p class="shop__title">Магазин</p>
+                    </div>
+                    <div class="basket">
+                        <img src="img/basket.png" alt="" class="image__basket">
+                        <p class="basket__title">Корзина</p>
+                    </div>
+                    <div class="registration">
+                        <img src="img/person.png" alt="" class="registration__img">
+                        <p class="registration__title">Войти</p>
+                    </div>
+                    <div class="authorization__done">
+                        <img src="img/hand.png" alt="" class="welcome__img">
+                        <p class="welcome"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="header__main">
+                <div class="header__main__description">
+                    <img src="img/for-footer-logo.png" alt="" class="image__title">
+                    <p class="subtitle">Покемоны — существа, населяющие мир игр про покемонов. Их можно поймать с
+                        помощью покеболов или же купить в нашем онлайн магазине.</p>
+                </div>
+                <div class="header__main__image">
+                    <div class="carusel">
+                        <input type="radio" name="radio_btn" id="radio1" class="radio">
+                        <input type="radio" name="radio_btn" id="radio2" class="radio">
+                        <input type="radio" name="radio_btn" id="radio3" class="radio">
+                        <input type="radio" name="radio_btn" id="radio4" class="radio">
+                        <input type="radio" name="radio_btn" id="radio5" class="radio">
+
+                        <div class="img__slide first">
+                            <img src="img/carusel-1.webp" alt="" class="img__carusel">
+                        </div>
+                        <div class="img__slide">
+                            <img src="img/carusel-5.webp" alt="" class="img__carusel">
+                        </div>
+                        <div class="img__slide">
+                            <img src="img/carusel-2.webp" alt="" class="img__carusel">
+                        </div>
+                        <div class="img__slide">
+                            <img src="img/carusel-4.webp" alt="" class="img__carusel">
+                        </div>
+                        <div class="img__slide">
+                            <img src="img/carusel-3.webp" alt="" class="img__carusel">
+                        </div>
+
+                        <div class="navigation">
+                            <label for="radio1" class="navigation_btn"></label>
+                            <label for="radio2" class="navigation_btn"></label>
+                            <label for="radio3" class="navigation_btn"></label>
+                            <label for="radio4" class="navigation_btn"></label>
+                            <label for="radio5" class="navigation_btn"></label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- <div class="modal__window">
+                <h4 class="question__about__logout"></h4>
+                <div class="button__wrap">
+                    <button class="btn__logout"></button>
+                    <button class="btn__cansel"></button>
+                </div>
+            </div> -->
+        </header>
+        <main>
+            <div class="pokemons">
+                <h2 class="pokemons__title">Наши Покемоны</h2>
+                <p class="pokemons__text">У нас можно найти покемона на любой вкус. Большой ассортимент. Приятные цены.
+                </p>
+                <div class="all__pokemons">
+                    <div class="all__pokemons__show"></div>
+                    <button class="pokemon__show__btn">Показать всех</button>
+                </div>
+            </div>
+            <div class="about_shop">
+                <h3 class="about_shop__title">О магазине</h3>
+                <div class="about_shop__description">
+                    <h2 class="about_shop__count">27</h2>
+                    <p class="about_shop__subtitle">Филиалов по всей стране</p>
+                    <h2 class="about_shop__count">11573</h2>
+                    <p class="about_shop__subtitle">Покемонов продано</p>
+                    <h2 class="about_shop__count">9058</h2>
+                    <p class="about_shop__subtitle">Покупателей</p>
+                    <h2 class="about_shop__count">79</h2>
+                    <p class="about_shop__subtitle">Доставка по городам</p>
+                </div>
+            </div>
+            <div class="delivery">
+                <h3 class="delivery__title">Доставка</h3>
+                <div class="delivery__line"></div>
+                <p class="delivery__sbtitle">Работаем без праздников и выходных! Жители Астаны могут получить заказ уже
+                    в день его оформления. Клиенты из других городов Казахстана могут получить заказ в течение 1-5 дней
+                    в зависимости от местонахождения населенного пункта и выбранного способа доставки. Заказы на сумму
+                    cвыше 800 $ доставляются бесплатно*. Доступные способы, точные сроки и стоимость доставки Вы можете
+                    увидеть во время оформления заказа в корзине заказа, после выбора города доставки.
+                </p>
+            </div>
+            <div class="questions check">
+                <h3 class="questions__title">Часто задаваемые вопросы:</h3>
+                <div class="questions__block">
+                    <div class="questions__block__title">
+                        <h4 class="title">Как оформить заказ?</h4>
+                    </div>
+                    <div class="answer">
+                        <p class="text">Когда вы определились с выбором, поместите товар в корзину и нажмите на кнопку
+                        «Купить». Далее можно продолжить покупки или перейти к оформлению заказа.</p>
+                    </div>
+                </div>
+                <div class="questions__block">
+                    <div class="questions__block__title">
+                        <h4 class="title">Какого покемона лучше выбрать?</h4>
+                    </div>
+                    <div class="answer">
+                        <p class="text">На этот вопрос нет правильного ответа. Решите, какой класс покемона вам нравится
+                        больше всего. Не зацикливайтесь на выборе начального покемона.</p>
+                    </div>
+                </div>
+                <div class="questions__block">
+                    <div class="questions__block__title">
+                        <h4 class="title">Сколько ожидать доставку в другой город?</h4>
+                    </div>
+                    <div class="answer">
+                        <p class="text">Клиенты из других городов Казахстана могут получить заказ в течение 1-5 дней
+                        в зависимости от местонахождения населенного пункта и выбранного способа доставки.</p>
+                    </div>
+                </div>
+                <div class="questions__block">
+                    <div class="questions__block__title">
+                        <h4 class="title">Как можно оплатить заказ?</h4>
+                    </div>
+                    <div class="answer">
+                        <p class="text">Оплата заказа осуществляется безналичным способом на кассе нашего магазина. Если
+                        же вы сделали заказ онлайн, оплата осуществляется курьеру при доставке</p>
+                    </div>
+                </div>
+                <div class="questions__block">
+                    <div class="questions__block__title">
+                        <h4 class="title">Где и как узнать об акциях?</h4>
+                    </div>
+                    <div class="answer">
+                        <p class="text">Информация об акциях размещается только на сайте и в мобильных приложениях нашей площадки, а также, в наших официальных группах в социальных сетях. Ссылки на наши официальные группы вы можете найти в разделе сайта «Мы в соцсетях» внизу сайта.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="social_network">
+                <h3 class="social_network__title">Следите за нами в социальных сетях</h3>
+                <div class="social_network__images">
+                    <img src="img/fb.png" alt="" class="social_network__image">
+                    <img src="img/tw.png" alt="" class="social_network__image">
+                    <img src="img/vk.png" alt="" class="social_network__image">
+                    <img src="img/inst.png" alt="" class="social_network__image">
+                    <img src="img/utb.png" alt="" class="social_network__image">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="footer__license">
+                    <img src="img/for-footer-logo.png" alt="" class="footer__license__logo">
+                    <p class="footer__license__subtitle">© Все права защищены</p>
+                </div>
+                <div class="footer__contact_information">
+                    <div class="information">
+                        <p class="information__text">По всем вопросам обращайтесь по номеру:</p>
+                        <p class="information__phone">+7 (777) 878-87-78</p>
+                    </div>
+
+                    <div class="information__image">
+                        <img src="img/for-footer.png" alt="" class="image">
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/logic/authorization_logic.js"></script>
+    <script src="js/logic/basket_logic.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
